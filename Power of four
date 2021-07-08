@@ -1,0 +1,18 @@
+int isPowerOfFour(unsigned int n)
+    {
+      // Your code goes here
+      if((n&(n-1))==0)
+      {
+          int cnt=0;
+        while(n)
+        {
+            n=n>>1;
+            cnt++;
+        }
+        if(cnt%2==0)
+        return 0;
+        return 1;
+      }
+      return 0;
+      
+    }
