@@ -1,0 +1,9 @@
+int Solution::solve(int A) {
+    int cnt=0;
+    while((A&1)==0)
+    {
+        cnt++;
+        A=A>>1;
+    }
+    return cnt;
+}
